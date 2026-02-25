@@ -53,12 +53,13 @@ Students learn what HTML is, how browsers interpret markup, and how to write the
 
 - Anatomy of HTML: elements, tags, attributes.  Web Resource: [Tags vs Elements vs Attributes](https://www.geeksforgeeks.org/html/tags-vs-elements-vs-attributes-in-html/)
 - Show tag = opening + closing.  
-- Introduce self-closing tags.
-- Walk through the HTML5 boilerplate live on the projector: `<!DOCTYPE>`, `<html>`, `<head>`, `<meta charset>`, `<title>`, `<body>`.
+- Introduce self-closing tags. **Create a tags.html file in L1, add tags**
+- Walk through the HTML5 boilerplate live on the projector: `<!DOCTYPE>`, `<html>`, `<head>`, `<meta charset>`, `<title>`, `<body>`. **Show students how to open/preview L1_reference_code.html**
 
 **Guided Practice — 25 min**
 
-- Students open VS Code (or chosen editor).
+- Students open VS Code (or chosen editor). 
+- Create a **new_page.html** file in L1 folder.
 - Instructor types the boilerplate live; students follow along.
 - Students add their name in the title, write one heading, and one paragraph.
 - Open in browser — first page!
@@ -66,6 +67,8 @@ Students learn what HTML is, how browsers interpret markup, and how to write the
 **Wrap-Up — 10 min**
 
 - Return to warm-up responses. Correct misconceptions.
+- Extra: Copy and paste into W3 Validator
+- Review the Learning Objectives for this Lesson.
 - Students write an exit ticket: draw and label an HTML element from memory.
 
 ### Key Concepts & Vocabulary

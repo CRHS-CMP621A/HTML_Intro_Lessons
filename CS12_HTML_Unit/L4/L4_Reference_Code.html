@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4 Reference Code - Lists and Tables</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      h1 {
+        color: #8e44ad;
+        border-bottom: 3px solid #8e44ad;
+        padding-bottom: 10px;
+      }
+      .code-block {
+        background: #1a1a2e;
+        color: #a8d8ea;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        overflow-x: auto;
+        margin: 20px 0;
+      }
+      .tag {
+        color: #f39c12;
+      }
+      .attr {
+        color: #27ae60;
+      }
+      .val {
+        color: #e74c3c;
+      }
+      .comment {
+        color: #95a5a6;
+        font-style: italic;
+      }
+      .text {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lesson 4 Reference Code</h1>
+    <h2>Lists and Tables</h2>
+
+    <div class="code-block">
+      <pre><span class="comment">&lt;!-- UNORDERED LIST: Bullets, order doesn't matter --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">First item</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">Second item</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">Third item</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- ORDERED LIST: Numbers, order matters --&gt;</span>
+<span class="tag">&lt;ol&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">Step one</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">Step two</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">Step three</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="comment">&lt;!-- NESTED LISTS: Put a list inside an &lt;li&gt; --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">Web Technologies</span>
+    <span class="tag">&lt;ul&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="text">HTML</span><span class="tag">&lt;/li&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="text">CSS</span><span class="tag">&lt;/li&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="text">JavaScript</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+  <span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="text">Other Topics</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- BASIC TABLE STRUCTURE --&gt;</span>
+<span class="tag">&lt;table&gt;</span>
+  <span class="tag">&lt;tr&gt;</span> <span class="comment">&lt;!-- Table Row --&gt;</span>
+    <span class="tag">&lt;th&gt;</span><span class="text">Header 1</span><span class="tag">&lt;/th&gt;</span> <span class="comment">&lt;!-- Table Header (bold/centered) --&gt;</span>
+    <span class="tag">&lt;th&gt;</span><span class="text">Header 2</span><span class="tag">&lt;/th&gt;</span>
+    <span class="tag">&lt;th&gt;</span><span class="text">Header 3</span><span class="tag">&lt;/th&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;tr&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Data A</span><span class="tag">&lt;/td&gt;</span> <span class="comment">&lt;!-- Table Data --&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Data B</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Data C</span><span class="tag">&lt;/td&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;tr&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Data D</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Data E</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Data F</span><span class="tag">&lt;/td&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+
+<span class="comment">&lt;!-- SEMANTIC TABLE: Using thead, tbody, tfoot --&gt;</span>
+<span class="tag">&lt;table&gt;</span>
+  <span class="tag">&lt;thead&gt;</span> <span class="comment">&lt;!-- Table header section --&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;th&gt;</span><span class="text">Name</span><span class="tag">&lt;/th&gt;</span>
+      <span class="tag">&lt;th&gt;</span><span class="text">Grade</span><span class="tag">&lt;/th&gt;</span>
+      <span class="tag">&lt;th&gt;</span><span class="text">Score</span><span class="tag">&lt;/th&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/thead&gt;</span>
+  <span class="tag">&lt;tbody&gt;</span> <span class="comment">&lt;!-- Table body section --&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="text">Alice</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="text">11</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="text">95%</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="text">Bob</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="text">12</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="text">88%</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/tbody&gt;</span>
+  <span class="tag">&lt;tfoot&gt;</span> <span class="comment">&lt;!-- Table footer (optional) --&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;td</span> <span class="attr">colspan</span>=<span class="val">"2"</span><span class="tag">&gt;</span><span class="text">Average:</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="text">91.5%</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/tfoot&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+
+<span class="comment">&lt;!-- SPANNING COLUMNS/ROWS --&gt;</span>
+<span class="tag">&lt;table&gt;</span>
+  <span class="tag">&lt;tr&gt;</span>
+    <span class="tag">&lt;th</span> <span class="attr">colspan</span>=<span class="val">"2"</span><span class="tag">&gt;</span><span class="text">Header spans 2 columns</span><span class="tag">&lt;/th&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;tr&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Cell 1</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="text">Cell 2</span><span class="tag">&lt;/td&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+    </div>
+
+    <h3>Key Concepts:</h3>
+    <ul>
+      <li>
+        <strong>&lt;ul&gt;</strong> - Unordered list (bullets), use when order
+        doesn't matter
+      </li>
+      <li>
+        <strong>&lt;ol&gt;</strong> - Ordered list (numbers), use for steps or
+        rankings
+      </li>
+      <li><strong>&lt;li&gt;</strong> - List item, must be inside ul or ol</li>
+      <li>
+        <strong>&lt;th&gt;</strong> - Table header cell (bold, centered by
+        default)
+      </li>
+      <li><strong>&lt;td&gt;</strong> - Table data cell (normal text)</li>
+      <li>
+        <strong>colspan/rowspan</strong> - Make a cell span multiple columns or
+        rows
+      </li>
+      <li>
+        <strong>thead/tbody/tfoot</strong> - Semantic grouping for better
+        accessibility
+      </li>
+    </ul>
+  </body>
+</html>

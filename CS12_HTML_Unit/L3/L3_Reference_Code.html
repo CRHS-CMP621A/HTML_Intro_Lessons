@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3 Reference Code - Links and Media</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      h1 {
+        color: #27ae60;
+        border-bottom: 3px solid #27ae60;
+        padding-bottom: 10px;
+      }
+      .code-block {
+        background: #1a1a2e;
+        color: #a8d8ea;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        overflow-x: auto;
+        margin: 20px 0;
+      }
+      .tag {
+        color: #f39c12;
+      }
+      .attr {
+        color: #27ae60;
+      }
+      .val {
+        color: #e74c3c;
+      }
+      .comment {
+        color: #95a5a6;
+        font-style: italic;
+      }
+      .text {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lesson 3 Reference Code</h1>
+    <h2>Links and Media</h2>
+
+    <div class="code-block">
+      <pre><span class="comment">&lt;!-- EXTERNAL LINKS: Full URL with https:// --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"https://www.example.com"</span><span class="tag">&gt;</span><span class="text">Visit Example.com</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- INTERNAL LINKS: Path to another page on your site --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"about.html"</span><span class="tag">&gt;</span><span class="text">About Page</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"../index.html"</span><span class="tag">&gt;</span><span class="text">Back to Home</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- ANCHOR LINKS: Jump to a section on the same page --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#contact"</span><span class="tag">&gt;</span><span class="text">Jump to Contact Section</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;h2</span> <span class="attr">id</span>=<span class="val">"contact"</span><span class="tag">&gt;</span><span class="text">Contact Us</span><span class="tag">&lt;/h2&gt;</span>
+
+<span class="comment">&lt;!-- EMAIL LINKS: Opens user's email client --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"mailto:hello@school.edu"</span><span class="tag">&gt;</span><span class="text">Email Us</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- OPEN IN NEW TAB: Use target attribute --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"https://example.com"</span> <span class="attr">target</span>=<span class="val">"_blank"</span><span class="tag">&gt;</span><span class="text">Open in New Tab</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- IMAGES: src is path/URL, alt describes the image --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"images/logo.png"</span> <span class="attr">alt</span>=<span class="val">"School Logo"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"photo.jpg"</span> <span class="attr">alt</span>=<span class="val">"Students in classroom"</span>
+     <span class="attr">width</span>=<span class="val">"300"</span> <span class="attr">height</span>=<span class="val">"200"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- CLICKABLE IMAGES: Wrap img in an anchor tag --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"gallery.html"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"thumbnail.jpg"</span> <span class="attr">alt</span>=<span class="val">"View Gallery"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- VIDEO: controls attribute adds play/pause buttons --&gt;</span>
+<span class="tag">&lt;video</span> <span class="attr">src</span>=<span class="val">"intro.mp4"</span> <span class="attr">controls</span> <span class="attr">width</span>=<span class="val">"500"</span><span class="tag">&gt;</span>
+<span class="text">  Your browser doesn't support video.</span>
+<span class="tag">&lt;/video&gt;</span>
+
+<span class="comment">&lt;!-- AUDIO: Same pattern as video --&gt;</span>
+<span class="tag">&lt;audio</span> <span class="attr">src</span>=<span class="val">"podcast.mp3"</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+<span class="text">  Your browser doesn't support audio.</span>
+<span class="tag">&lt;/audio&gt;</span></pre>
+    </div>
+
+    <h3>Key Concepts:</h3>
+    <ul>
+      <li>
+        <strong>href attribute</strong> - Hypertext reference, the destination
+        URL
+      </li>
+      <li>
+        <strong>Relative paths</strong> - ./file.html (same folder),
+        ../file.html (parent folder)
+      </li>
+      <li><strong>Absolute paths</strong> - Full URL starting with https://</li>
+      <li>
+        <strong>alt text</strong> - REQUIRED for images, describes content for
+        screen readers and broken images
+      </li>
+      <li>
+        <strong>controls attribute</strong> - Adds playback controls to
+        video/audio
+      </li>
+    </ul>
+  </body>
+</html>

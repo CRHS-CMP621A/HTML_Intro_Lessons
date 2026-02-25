@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 5 Reference Code - Forms</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      h1 {
+        color: #e67e22;
+        border-bottom: 3px solid #e67e22;
+        padding-bottom: 10px;
+      }
+      .code-block {
+        background: #1a1a2e;
+        color: #a8d8ea;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        overflow-x: auto;
+        margin: 20px 0;
+      }
+      .tag {
+        color: #f39c12;
+      }
+      .attr {
+        color: #27ae60;
+      }
+      .val {
+        color: #e74c3c;
+      }
+      .comment {
+        color: #95a5a6;
+        font-style: italic;
+      }
+      .text {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lesson 5 Reference Code</h1>
+    <h2>HTML Forms</h2>
+
+    <div class="code-block">
+      <pre><span class="tag">&lt;form</span> <span class="attr">action</span>=<span class="val">"/submit"</span> <span class="attr">method</span>=<span class="val">"post"</span><span class="tag">&gt;</span>
+
+  <span class="comment">&lt;!-- Label links to input via matching for/id --&gt;</span>
+  <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"username"</span><span class="tag">&gt;</span><span class="text">Name:</span><span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"text"</span> <span class="attr">id</span>=<span class="val">"username"</span>
+         <span class="attr">name</span>=<span class="val">"username"</span> <span class="attr">required</span><span class="tag">&gt;</span>
+
+  <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"email"</span><span class="tag">&gt;</span><span class="text">Email:</span><span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"email"</span> <span class="attr">id</span>=<span class="val">"email"</span>
+         <span class="attr">name</span>=<span class="val">"email"</span><span class="tag">&gt;</span>
+
+  <span class="comment">&lt;!-- Radio buttons share the same name --&gt;</span>
+  <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"radio"</span> <span class="attr">name</span>=<span class="val">"grade"</span>
+         <span class="attr">id</span>=<span class="val">"g11"</span> <span class="attr">value</span>=<span class="val">"11"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"g11"</span><span class="tag">&gt;</span><span class="text">Grade 11</span><span class="tag">&lt;/label&gt;</span>
+
+  <span class="comment">&lt;!-- Dropdown --&gt;</span>
+  <span class="tag">&lt;select</span> <span class="attr">name</span>=<span class="val">"subject"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;option</span> <span class="attr">value</span>=<span class="val">"cs"</span><span class="tag">&gt;</span><span class="text">Computer Science</span><span class="tag">&lt;/option&gt;</span>
+    <span class="tag">&lt;option</span> <span class="attr">value</span>=<span class="val">"math"</span><span class="tag">&gt;</span><span class="text">Math</span><span class="tag">&lt;/option&gt;</span>
+  <span class="tag">&lt;/select&gt;</span>
+
+  <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"msg"</span><span class="tag">&gt;</span><span class="text">Message:</span><span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;textarea</span> <span class="attr">id</span>=<span class="val">"msg"</span> <span class="attr">name</span>=<span class="val">"msg"</span>
+            <span class="attr">rows</span>=<span class="val">"4"</span><span class="tag">&gt;&lt;/textarea&gt;</span>
+
+  <span class="tag">&lt;button</span> <span class="attr">type</span>=<span class="val">"submit"</span><span class="tag">&gt;</span><span class="text">Send</span><span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+    </div>
+
+    <h3>Common Input Types:</h3>
+    <div class="code-block">
+      <pre><span class="comment">&lt;!-- TEXT INPUT TYPES --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"text"</span><span class="tag">&gt;</span>       <span class="comment">&lt;!-- Single-line text --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"email"</span><span class="tag">&gt;</span>      <span class="comment">&lt;!-- Email validation --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"password"</span><span class="tag">&gt;</span>   <span class="comment">&lt;!-- Hidden characters --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"tel"</span><span class="tag">&gt;</span>       <span class="comment">&lt;!-- Phone number --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"url"</span><span class="tag">&gt;</span>       <span class="comment">&lt;!-- Website URL --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"number"</span><span class="tag">&gt;</span>     <span class="comment">&lt;!-- Numeric input --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"date"</span><span class="tag">&gt;</span>       <span class="comment">&lt;!-- Date picker --&gt;</span>
+
+<span class="comment">&lt;!-- CHOICE INPUT TYPES --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"checkbox"</span><span class="tag">&gt;</span>   <span class="comment">&lt;!-- Multiple selections --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"radio"</span><span class="tag">&gt;</span>      <span class="comment">&lt;!-- Single selection from group --&gt;</span>
+
+<span class="comment">&lt;!-- OTHER INPUT TYPES --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"file"</span><span class="tag">&gt;</span>       <span class="comment">&lt;!-- File upload --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"color"</span><span class="tag">&gt;</span>      <span class="comment">&lt;!-- Color picker --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"range"</span><span class="tag">&gt;</span>      <span class="comment">&lt;!-- Slider --&gt;</span></pre>
+    </div>
+
+    <h3>Key Form Attributes:</h3>
+    <div class="code-block">
+      <pre><span class="comment">&lt;!-- FORM ATTRIBUTES --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action</span>=<span class="val">"/submit"</span>   <span class="comment">&lt;!-- URL to send data to --&gt;</span>
+      <span class="attr">method</span>=<span class="val">"post"</span><span class="tag">&gt;</span>    <span class="comment">&lt;!-- How to send: "get" or "post" --&gt;</span>
+
+<span class="comment">&lt;!-- INPUT ATTRIBUTES --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">name</span>=<span class="val">"username"</span>      <span class="comment">&lt;!-- Key for this field's data --&gt;</span>
+       <span class="attr">id</span>=<span class="val">"username"</span>        <span class="comment">&lt;!-- Links to label's for attribute --&gt;</span>
+       <span class="attr">value</span>=<span class="val">"default"</span>      <span class="comment">&lt;!-- Pre-filled value --&gt;</span>
+       <span class="attr">placeholder</span>=<span class="val">"hint"</span>   <span class="comment">&lt;!-- Hint text inside field --&gt;</span>
+       <span class="attr">required</span>             <span class="comment">&lt;!-- Must be filled before submit --&gt;</span>
+       <span class="attr">disabled</span>             <span class="comment">&lt;!-- Field is grayed out --&gt;</span>
+       <span class="attr">readonly</span><span class="tag">&gt;</span>            <span class="comment">&lt;!-- Can't be edited --&gt;</span></pre>
+    </div>
+
+    <h3>Key Concepts:</h3>
+    <ul>
+      <li>
+        <strong>&lt;form&gt;</strong> - Container that groups inputs; action is
+        where data goes
+      </li>
+      <li>
+        <strong>&lt;label&gt;</strong> - Associates text with an input using
+        for/id pairing
+      </li>
+      <li>
+        <strong>name attribute</strong> - The key used when form data is
+        submitted (required!)
+      </li>
+      <li>
+        <strong>id attribute</strong> - Links label to input, used for CSS/JS
+        targeting
+      </li>
+      <li>
+        <strong>Radio buttons</strong> - Must share the same name to be mutually
+        exclusive
+      </li>
+      <li>
+        <strong>Checkboxes</strong> - Use different names to allow multiple
+        selections
+      </li>
+      <li>
+        <strong>&lt;select&gt;</strong> - Dropdown menu containing
+        &lt;option&gt; elements
+      </li>
+      <li>
+        <strong>&lt;textarea&gt;</strong> - Multi-line text input; set rows/cols
+        for size
+      </li>
+      <li>
+        <strong>required</strong> - Browser validates field before allowing
+        submission
+      </li>
+    </ul>
+  </body>
+</html>

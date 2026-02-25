@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inaccessible NVDA Demo</title>
+  </head>
+  <body>
+    <div style="font-size: 30px">Welcome</div>
+    <div>
+      <span
+        onclick="location.href = '#news'"
+        style="color: blue; cursor: pointer"
+        >Click here</span
+      >
+      <span
+        onclick="location.href = '#contact'"
+        style="color: blue; cursor: pointer"
+        >Go</span
+      >
+    </div>
+
+    <div id="news">
+      <b>Latest News</b>
+      <p>We have something coming soon.</p>
+    </div>
+
+    <div>
+      <form>
+        Email: <input type="text" />
+        <div
+          onclick="alert('Subscribed!')"
+          style="background: gray; color: white; padding: 5px"
+        >
+          Submit
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <img src="logo.png" />
+    </div>
+
+    <div>
+      <table border="1">
+        <tr>
+          <td>Widget A</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Widget B</td>
+          <td>$15</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

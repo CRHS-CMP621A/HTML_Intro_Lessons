@@ -1,0 +1,97 @@
+html
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Elements Example</title>
+  </head>
+  <body>
+    <h1 id="top">HTML Elements Demo Page</h1>
+
+    <!-- TABLE OF CONTENTS (In-page links) -->
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#audio">Audio</a></li>
+    </ul>
+
+    <hr />
+
+    <!-- LINKS SECTION -->
+    <h2 id="links">Links</h2>
+
+    <h3>1. Absolute Link</h3>
+    <p>
+      An absolute link includes the full URL:
+      <a href="https://www.example.com">Visit Example.com</a>
+    </p>
+
+    <h3>2. Local (Relative) Link</h3>
+    <p>
+      A local link points to a file in the same directory:
+      <a href="about.html">About Page (local)</a>
+    </p>
+
+    <h3>3. In-Page (Anchor) Link</h3>
+    <p>
+      An in-page link jumps to a section on the same page:
+      <a href="#top">Back to Top</a> |
+      <a href="#audio">Jump to Audio Section</a>
+    </p>
+
+    <hr />
+
+    <!-- IMAGES SECTION -->
+    <h2 id="images">Images</h2>
+
+    <h3>Image with src and alt attributes</h3>
+    <p>
+      The <code>src</code> attribute specifies the image path;
+      <code>alt</code> provides a text description.
+    </p>
+
+    <img
+      src="https://www.w3schools.com/html/pic_trulli.jpg"
+      alt="Trulli houses in Alberobello, Italy"
+      width="300"
+    />
+
+    <p>Local image example (relative src):</p>
+    <img
+      src="media/photo.jpg"
+      alt="A local photo stored in the images folder"
+      width="300"
+    />
+
+    <hr />
+
+    <!-- VIDEO SECTION -->
+    <h2 id="video">Video</h2>
+    <p>A video element with controls:</p>
+
+    <video width="400" controls>
+      <source src="media/sample-video.mp4" type="video/mp4" />
+      <source src="media/sample-video.ogg" type="video/ogg" />
+      Your browser does not support the video element.
+    </video>
+
+    <hr />
+
+    <!-- AUDIO SECTION -->
+    <h2 id="audio">Audio</h2>
+    <p>An audio element with controls:</p>
+
+    <audio controls>
+      <source src="media/sample-audio.mp3" type="audio/mpeg" />
+      <source src="media/sample-audio.ogg" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <hr />
+
+    <p><a href="#top">Back to Top</a></p>
+  </body>
+</html>
